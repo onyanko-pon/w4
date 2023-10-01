@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'It was 94 fahrenheit Tsuda, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+const storyText = '今日は天気が良かったので :insertx: お散歩に行き、そして :inserty:ダンスを踊り始めました。それから :insertz:. サトシはそれをみていましたが、驚きませんでした — :insertx: 美味しいホットドックを食べたいなと思いました。';
 const insertX = ['ピカチュウ', 'コイキング', 'ポッチャマ'];
 const insertY = ['異世界', 'お花畑', '東京スカイツリー'];
 const insertZ = ['走り回った', '美味しいご飯を食べた', '仲間と一緒に戦った'];
@@ -28,7 +28,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('サトシ', name);
   }
 
   if (document.getElementById("uk").checked) {
